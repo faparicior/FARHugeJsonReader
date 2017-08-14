@@ -1,0 +1,15 @@
+{
+    "name": "faparicio/huge_json_import",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Fernando Aparicio",
+            "email": "faparicior@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Faparicior\\HugeJsonImport\\": "Lib/"
+        }
+    }
+}
