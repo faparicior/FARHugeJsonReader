@@ -18,5 +18,8 @@
         "psr-4": {
             "Faparicior\\FARHugeJsonImport\\": "Lib/"
         }
+    },
+    "require": {
+        "php": ">=5.3.9"
     }
 }
