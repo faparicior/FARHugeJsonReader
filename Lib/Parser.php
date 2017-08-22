@@ -18,7 +18,7 @@ class Parser
         $this->lexer = $lexer;
     }
 
-    public function parse()
+    public function parse($asArray = false)
     {
         $this->buffer = $this->buffer.stream_get_contents(
                 $this->handle,
@@ -45,7 +45,7 @@ class Parser
                         break;
                     }
                     $this->buffer = substr($this->buffer, $i+1);
-                    return json_decode($this->uniqueJson);
+                    return json_decode($this->uniqueJson, $asArray);
                     break;
                 case Lexer::VALUE_ASSIGN_FLAG:
                     $this->uniqueJson = $this->uniqueJson.Lexer::VALUE_ASSIGN;
