@@ -38,7 +38,7 @@ class Lexer
             return self::NEW_VALUE_FLAG;
             break;
         case self::SPECIAL_CHARACTER:
-            return self::SPECIAL_CHARACTER_FLAG;
+        return self::SPECIAL_CHARACTER_FLAG;
             break;
         default:
             return self::CHARACTER_FLAG;

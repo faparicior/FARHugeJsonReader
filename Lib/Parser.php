@@ -57,6 +57,12 @@ class Parser
                 case Lexer::NEW_VALUE_FLAG:
                     $this->uniqueJson = $this->uniqueJson.$character;
                     break;
+                case Lexer::SPECIAL_CHARACTER_FLAG:
+                    $this->uniqueJson = $this->uniqueJson.$character;
+                    $i++;
+                    $character = substr($this->buffer, $i, 1);
+                    $this->uniqueJson = $this->uniqueJson.$character;
+                    break;
                 default:
                     $this->uniqueJson = $this->uniqueJson.$character;
                     break;
