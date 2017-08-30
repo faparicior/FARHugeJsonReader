@@ -1,6 +1,6 @@
 <?php
 
-namespace Faparicior\HugeJsonImport;
+namespace Faparicior\FARHugeJsonImport;
 
 class Lexer
 {
